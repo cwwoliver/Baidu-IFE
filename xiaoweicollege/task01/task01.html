@@ -121,40 +121,41 @@
 		        <td colspan="2">1000</td>
 		    </tr>
 		</table>
+	</div>
 	<!-- 侧栏 -->
 	<div class="celan">
 		<h3>这里以后是一个侧栏，这里是侧栏的标题</h3>
 		<h4>侧栏注册窗口标题</h4>
 		<form>
 			<p>
-				请输入邮箱地址:
-				<input type="text" value="这是一个文本输入框">
+				<label>请输入邮箱地址:</label>
+				<input type="text" placeholder="这是一个文本输入框">
 			</p>
 			<p>邮箱地址请按要求格式输入</p>
 			
 			<p>
-				请输入密码
-				<input type="text" value="这是一个文本输入框">
-				请重复输入密码:
-				<input type="text" value="这是一个文本输入框">
+				<label>请输入密码</label>
+				<input type="password" placeholder="这是一个文本输入框">
+				<label>请重复输入密码:</label>
+				<input type="password" placeholder="这是一个文本输入框">
 			</p>
 			<p>密码请为6-16位英文数字</p>
 			
 			<p>
-				<span>性别:</span>
+				<label>性别:</label>
 				<input type="radio" name="sex" id="nan" checked="checked">
 				<label for="nan">男</label>
 				<input type="radio" id="nv" name="sex">
 				<label for="nv">女</label>
 
-				<span>城市:</span>
+				<label>城市:</label>
 				<select name="location">
 					<option value="">北京</option>
 					<option value="">上海</option>
 					<option value="">广州</option>
 				</select>
 
-				<span>爱好:</span>
+				<label>爱好:</label>
 				<input type="checkbox" name="hobbies" id="sports">
 				<label for="sports">运动</label>
 				<input type="checkbox" name="hobbies" id="arts">
@@ -162,15 +163,15 @@
 				<input type="checkbox" name="hobbies" id="science">
 				<label for="science">科学</label>
 
-				<span>个人描述:</span>
-				<textarea name="" id="" cols="20" rows="2">这是一个多行输入框，输入您的个人描述</textarea>
-				<input type="button" value="确认提交">
+				<label>个人描述:</label>
+				<textarea name="" id="" cols="20" rows="2" placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
+				<input type="submit" value="确认提交">
 			</p>
 		</form>
 	</div>
 	<!-- copyright -->
 	<div class="copyright">
-		<p>版权所有&copy</p>
+		<p>版权所有&copy;</p>
 	</div>
 
 	</body>
