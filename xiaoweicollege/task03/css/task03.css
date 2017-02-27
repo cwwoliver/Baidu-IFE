@@ -1,0 +1,71 @@
+@charset "UTF-8";
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+
+body{
+    font: 14px/200% "Microsoft Yahei";
+    color: #000;
+}
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+.fl {
+    float:left
+}
+.fr {
+    float:right
+}
+
+.container{
+    background-color: #eee;
+    border: 1px solid #999;
+    padding: 20px;
+    margin: 20px;
+}
+/*left*/
+.team-name{
+    width: 160px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #999;
+}
+.team-logo{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #999;
+    float: left;
+}
+.team-name h3,.team-name p{
+    float: left;
+    padding-left: 10px;
+}
+
+/*main*/
+.team-intro{
+    background-color: #fff;
+    border: 1px solid #999;
+    margin: 0 140px 0 220px;
+    padding: 20px;
+}
+
+/*right*/
+.member-logo{
+    width: 80px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #999;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #999;
+}
+.logo-last{
+    margin-bottom: 0;
+}

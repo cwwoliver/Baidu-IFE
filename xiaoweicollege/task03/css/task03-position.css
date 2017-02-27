@@ -1,0 +1,68 @@
+@charset "UTF-8";
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+
+body{
+    font: 14px/200% "Microsoft Yahei";
+    color: #000;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+.container{
+    background-color: #eee;
+    border: 1px solid #999;
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    min-height: 428px; /*Oliver：设置最小高度，无法被绝对定位撑开*/
+}
+/*left*/
+.team-name{
+    width: 160px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #999;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.team-logo{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #999;
+
+}
+.team-name h3,.team-name p{
+    float: left;
+    padding-left: 10px;
+}
+
+/*main*/
+.team-intro{
+    background-color: #fff;
+    border: 1px solid #999;
+    margin: 0 140px 0 220px;
+    padding: 20px;
+}
+
+/*right*/
+.member-logo{
+    width: 80px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #999;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #999;
+}
+.logo-last{
+    margin-bottom: 0;
+}
