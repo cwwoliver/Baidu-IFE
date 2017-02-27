@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68c3dda4-744c-4410-8ae6-36faee5e5385" name="默认的" comment="p">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiaoweicollege/task03/css/task03-position.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiaoweicollege/task03/task03-position.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiaoweicollege/task03/css/task03.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiaoweicollege/task03/task03.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiaoweicollege/task02/task02.html" afterPath="$PROJECT_DIR$/xiaoweicollege/task02/task02.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="68c3dda4-744c-4410-8ae6-36faee5e5385" name="默认的" comment="p" />
     <ignored path="Baidu-IFE.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
