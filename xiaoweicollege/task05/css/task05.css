@@ -1,0 +1,239 @@
+@charset "UTF-8";
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+/*公共类*/
+.fl {
+float:left
+}
+.fr {
+float:right
+}
+.al {
+text-align:left
+}
+.ac {
+text-align:center
+}
+.ar {
+text-align:right
+}
+.hide {
+display:none
+}
+body {
+font:12px/150% "Microsoft Yahei";
+color:#000;
+background:#dedede;
+}
+.w{
+    width: 1200px;margin:0 auto;
+}
+.main{
+    margin-right: 405px;
+    margin-left: 20px;
+}
+/*toubu*/
+.toubu{
+    background-color: #333333;
+    height: 60px;
+}
+.toubu .logo a{
+    width: 118px;
+    height: 38px;
+    margin: 10px 0 12px 20px;
+    background: url(../images/logo.png) no-repeat;
+    display: block;
+    text-indent: -999px;
+}
+.nav{
+    margin-right: 21px;
+}
+.toubu .nav li{
+    float: left;
+    margin-left: 20px;
+}
+.toubu .nav .current{
+    color: #9b9faa;
+}
+.toubu .fr a{
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    text-decoration:none;
+}
+.toubu .fr a:hover{
+    color: #9b9faa;
+}
+/*article*/
+.article{
+    background-color: #fff;
+    margin-top: 21px;
+    border: 1px solid #ccc;
+    box-shadow:1px 1px 1px 0 #848484;
+    padding: 40px 20px;
+}
+.article h2{
+    font-weight: 700;
+    font-size: 22px;
+    height: 43px;
+}
+.article h3{
+    font-weight: 400;
+    font-size: 16px;
+    height: 33px;
+    color: #626262;
+}
+.article .article-info{
+    font-size: 12px;
+    height: 33px;
+    color: #626262;
+    text-indent: 0;
+}
+.article p{
+    font: 14px/26px "Microsoft Yahei";
+    text-indent: 2em;
+}
+.article img{
+    margin: 17px 0;
+}
+.article2 ul{
+    list-style: none;
+    padding-left: 15px;
+}
+.article3 ul{
+    list-style: none;
+}
+li.pic{
+    float: left;
+    width: 100px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin:0 0 17px 31px;
+}
+.pic-last{
+    margin-bottom: 0;
+}
+.pic p{
+    text-indent: 0;
+    width: 100%;
+    font-size: 12px;
+}
+.pic img{
+    width: 100px;
+    height: 80px;
+    margin: 0;
+}
+/*lastarticle*/
+.lastarticle ol{
+    padding-left: 40px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.lastarticle p{
+    text-indent: 0;
+    font-size: 14px;
+}
+.lastarticle table{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse:collapse;
+}
+.lastarticle table th{
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding-left: 5px;
+}
+.lastarticle table td{
+    border: 1px solid #ccc;
+    line-height: 24px;
+    height: 24px;
+    padding-left: 5px;
+}
+.lastarticle tr:last-child{
+    background-color: #ccc;
+    font-weight: bold;
+}
+/*slidebar*/
+.sidebar{
+    width: 322px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow:1px 1px 1px 0 #848484;
+    padding: 20px;
+    position: absolute;
+    top: 81px;
+    right: 21px;
+}
+.sidebar h3{
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 10px;
+    height: 38px;
+    line-height: 38px;
+    border-left: 3px solid #ccc;
+}
+.sidebar form{
+    width: 900px;
+}
+.email,
+.password{
+    overflow: hidden;
+}
+.sidebar .label-info{
+    float: left;
+    width: 93px;
+    height: 20px;
+    margin:11px 15px 0 0;
+    text-align: right;
+}
+.sidebar .email input,
+.sidebar .password input{
+    width: 150px;
+    height: 20px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    padding-left: 3px;
+}
+.email span,
+.password span{
+    float: left;
+    height: 20px;
+    padding: 10px 0 10px 108px;
+    color: #ccc;
+}
+.personal-info span{
+    float: left;
+    padding-top: 10px;
+}
+.cl{
+    clear: both;
+}
+textarea{
+    width: 203px;
+    height: 98px;
+}
+.sidebar input[type="submit"]{
+    width: 320px;
+    height: 38px;
+    line-height: 38px;
+    font: 16px "Microsoft Yahei";
+    color: #fff;
+    background-color: #3355d0;
+    border:1px solid #ccc;
+    border-radius: 6px;
+    outline-style:none;
+    cursor : pointer;
+    margin-top: 8px;
+}
+/*copyright*/
+.copyright{
+    background-color: #000;
+}
+.copyright p{
+    height: 70px;
+    color: #fff;
+    padding-top: 20px;
+    margin-top: 20px;
+}
