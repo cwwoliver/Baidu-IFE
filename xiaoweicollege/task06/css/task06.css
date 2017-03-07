@@ -1,0 +1,336 @@
+@charset "UTF-8";
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+img {border:0;	vertical-align:middle;}
+/*公共类*/
+.w{
+    width: 1210px;margin:0 auto;
+}
+.fl {
+    float:left
+}
+.fr {
+    float:right
+}
+.al {
+    text-align:left
+}
+.ac {
+    text-align:center
+}
+.ar {
+    text-align:right
+}
+.hide {
+    display:none
+}
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+body{
+    font: 12px/16px "SimSun";
+}
+.w{
+    width: 892px;
+    margin: 0 auto;
+}
+/*header*/
+.header{
+    height: 61px;
+    border-bottom: 2px solid #938e8c;
+    margin-bottom: 37px;
+}
+.logo{
+    width: 110px;
+    height: 14px;
+    background-color: #d45d5c;
+    padding: 44px 0 3px 7px;
+    font-family: "黑体";
+    color: #fff;
+}
+.date{
+    font-family: "黑体";
+    color: #d45d5c;
+    padding: 44px 0 3px 0;
+}
+/*artical1*/
+.article1 .pic{
+    width: 641px;
+    height: 301px;
+    background: url(../images/pic1.png) no-repeat;
+}
+.article1 .zz{
+    width: 191px;
+    height: 301px;
+    opacity: 0.5;
+}
+.article1 .green{
+    background-color: #428c59;
+}
+.article1 .red{
+    background-color: #cc7680;
+}
+.article1 .title{
+    width: 202px;
+    height: 302px;
+    border-top: 2px solid #cc8091;
+}
+.article1 .title h3{
+    font: 24px/34px "Microsoft Yahei";
+    text-decoration: underline;
+    padding-top: 6px;
+}
+.article1 .title span{
+    font-variant: small-caps;/*css小型大写字母,原文微小写*/
+}
+.article1 .title p{
+    font: 12px/10px "Kaiti";
+}
+.article1 .title .num700{
+    font: 116px/94px "Microsoft Yahei";
+    color: #75b86b;
+    font-style: oblique;
+    padding-top: 40px;
+    margin-left: -15px;
+}
+.article1 .title .num32{
+    font: 55px/55px "Microsoft Yahei";
+    color: #cc8091;
+    padding-top: 24px;
+    padding-left: 8px;
+    float: left;
+}
+.article1 .title .xia1{
+    color: #cc8091;
+    font: 21px/21px "Microsoft Yahei";
+    float: left;
+    padding-top: 42px;
+    padding-left: 10px;
+}
+.article1 .title .xia2{
+    font: 12px/12px "Microsoft Yahei";
+    float: left;
+    padding-left: 10px;
+    color: #bcbbba;
+}
+.article1 .content{
+    height: 242px;
+    margin-top: 40px;
+}
+.article1 .what,
+.article1 .when,
+.article1 .how{
+    width:220px;
+    height: 242px;
+    margin-right: 27px;
+    float: left;
+}
+.article1 .how{
+    height: 95px;
+    float: left;
+}
+.article1 .bfb{
+    width: 220px;
+    float: left;
+}
+.article1 .content h3{
+    font: 16px "Microsoft Yahei";
+    text-decoration: underline;
+}
+.article1 .what h3{
+    color: #418c59;
+}
+.article1 .when h3{
+    color: #d2994f;
+}
+.article1 .how h3{
+    color: #cc7680;
+}
+.article1 .content p{
+    font: 12px/16px "Simsun";
+    padding-top: 10px;
+    color: #767777;
+}
+.article1 .how p{
+    line-height: 21px;
+}
+.article1 .bfb p{
+    font-family: "Microsoft Yahei";
+    line-height: 16px;
+}
+.article1 .bfb span{
+    color: #cd4a48;
+    font-style: oblique;
+}
+
+/*article2*/
+.article2{
+    width: 415px;
+    height: 610px;
+}
+.article2 h2{
+    font: 42px/40px "黑体";
+    color: #11456b;
+}
+.article2 span{
+    font: 72px/40px "黑体";
+    color: #f5e327;
+    font-style: oblique;
+    padding-right: 20px;
+}
+.article2 h3{
+    font: 33px/33px "黑体";
+    color: #11456b;
+    padding:6px 0 16px 0 ;
+    border-bottom: 2px solid #11456b;
+    margin-bottom: 22px;
+}
+.article2 p{
+    text-indent: 2em;
+    color: #767777;
+}
+.article2 .p1{
+    text-indent: 0;
+}
+.article2 i{
+    font-style: normal;
+    color: #f5e327;
+    font: 70px "Microsoft Yahei";
+    line-height: 70px;
+    float: left;
+    padding-right: 7px;
+}
+.article2 img{
+    float: right;
+    padding: 15px 6px 15px 15px;
+}
+/*qdjs*/
+.qdjs{
+    width: 458px;
+    height: 257px;
+    background:url(../images/pic2.png) no-repeat;
+}
+.huise{
+    margin-top: 197px;
+    width: 442px;
+    height: 44px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 8px;
+}
+.huise h3{
+    font: 26px/44px "Microsoft Yahei";
+    color: #fff;
+    margin-left:41px;
+    padding-left: 12px;
+    border-left: 3px solid #72b16a;
+}
+.huise h3 span{
+    font: 12px/12px "Microsoft Yahei";
+    color: #72b16a;
+    padding-left: 8px;
+    font-style: italic;
+}
+
+.youxia{
+    width: 458px;
+    height: 318px;
+    background-color: #eeedd6;
+    margin-top: 30px;
+}
+.youxia .catalog{
+    height: 127px;
+    padding: 30px 20px 0 30px;
+}
+.youxia .catalog p{
+    font-size: 16px;
+    padding-bottom: 25px;
+}
+.youxia .catalog span{
+    font-size: 12px;
+    font-style: italic;
+}
+.youxia .catalog i{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid #11456c;
+    float: left;
+    margin-top: 3px;
+    margin-right: 6px;
+}
+.youxia .num0{
+    width: 260px;
+    height: 161px;
+    background-color: #d45d5c;
+    float: left;
+    color: #fff;
+}
+.youxia .num0 .zero{
+    line-height:;161px;
+    font: 110px "Microsoft Yahei";
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.youxia .num0 div{
+    float: left;
+    width: 160px;
+    height: 76px;
+    padding:5px 5px;
+    border-left: 2px solid #fff;
+    margin-top: 40px;
+    font: 21px/24px "黑体";
+    font-style: italic;
+}
+.youxia .num0 .hw{
+    font: 12px "黑体";
+    line-height: 12px;
+    font-style: normal;
+    padding-top: 5px;
+}
+.hello{
+    float: left;
+    font: 14px/16px "黑体";
+    font-style: italic;
+    width: 165px;
+    padding-top: 18px;
+    padding-left: 15px;
+    position: relative;
+}
+.hello p{
+    text-indent: 3em;
+}
+.hello i{
+    line-height: 0;
+    font-size: 72px;
+    font-style: normal;
+    color: #d45d5c;
+    position: absolute;
+    top: 42px;
+    left: -24px;
+}
+.hello b{
+    font-weight: normal;
+    line-height: 0;
+    font-size: 72px;
+    font-style: normal;
+    color: #d45d5c;
+    position: absolute;
+    top: 136px;
+    right: -36px;
+}
+
+/*footer*/
+.footer{
+    height: 58px;
+    margin-top: 40px;
+    border-top: 1px solid #938e8c;
+    text-align: right;
+    color: #d45d5c;
+    font: 12px "黑体";
+}
