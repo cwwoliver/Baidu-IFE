@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+</head>
+<body>
+
+<h3>污染城市列表</h3>
+<ul id="aqi-list">
+    <!--
+        <li>第一名：福州（样例），10</li>
+          <li>第二名：福州（样例），10</li> -->
+</ul>
+
+<script type="text/javascript">
+
+    var aqiData = [
+        ["北京", 90],
+        ["上海", 50],
+        ["福州", 10],
+        ["广州", 50],
+        ["成都", 90],
+        ["西安", 100]
+    ];
+
+    var num = ["一","二","三","四","五","六"];/*排名*/
+
+    aqiData.sort(function(a,b){return b[1]-a[1]});
+    /*a,b表示数组中的任意两个元素，若return > 0 b前a后；reutrn < 0 a前b后；即：a-b输出从小到大排序，b-a输出从大到小排序。*/
+
+    (function () {
+
+        /*
+         在注释下方编写代码
+         遍历读取aqiData中各个城市的数据
+         将空气质量指数大于60的城市显示到aqi-list的列表中
+         */
+        for (var i = 0; i < aqiData.length; i++){
+            if (aqiData[i][1]>60){
+                var list_list =document.getElementById("aqi-list");
+                var list_item = document.createElement("LI"); //创建一个li节点
+                var list_item_text = document.createTextNode("第"+num[i]+"名"+":"+aqiData[i][0]+","+aqiData[i][1]); //创建一个文本节点内容
+                list_item.appendChild(list_item_text);//将文本节点内容，添加到li节点里面
+                list_list.appendChild(list_item);  //将li节点，添加到list_list点下面
+            }
+        }
+
+
+    })();
+
+</script>
+</body>
+</html>
