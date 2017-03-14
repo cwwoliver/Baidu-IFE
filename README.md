@@ -10,6 +10,12 @@
 * [任务五：零基础HTML及CSS编码（二）](https://cwwoliver.github.io/Baidu-IFE/xiaoweicollege/task05/task05.html)
 * [任务六：通过HTML及CSS模拟报纸排版](https://cwwoliver.github.io/Baidu-IFE/xiaoweicollege/task06/task06.html)
 
+=======
+
+> 斌斌学院
+
+* [任务一：零基础JavaScript编码（一）](https://cwwoliver.github.io/Baidu-IFE/binbincollege/task01/task01.html)
+
 
 
 =======
