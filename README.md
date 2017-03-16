@@ -16,6 +16,7 @@
 
 * [任务一：零基础JavaScript编码（一）](https://cwwoliver.github.io/Baidu-IFE/binbincollege/task01/task01.html)
 * [任务二：零基础JavaScript编码（二）](https://cwwoliver.github.io/Baidu-IFE/binbincollege/task02/task02.html)
+* [任务三：零基础JavaScript编码（三）](https://cwwoliver.github.io/Baidu-IFE/binbincollege/task03/task03.html)
 
 
 
