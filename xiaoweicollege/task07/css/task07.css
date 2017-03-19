@@ -571,7 +571,12 @@ color: #fff;
     background:url(../images/more.png) no-repeat right center;
 }
 .form{
+    width: 61%;
+    float: right;
+}
+.form form{
     height: 285px;
+    width: 660px;/*防止分辨率过大时盒子上移*/
 }
 .form form input{
     display: block;
@@ -586,6 +591,7 @@ color: #fff;
 }
 
 .form form textarea{
+    display: block;
     width: 610px;
     height: 90px;
     background-color: #ededef;
