@@ -11,3 +11,4 @@
 <p>4.appearance:none; -moz-appearance:none; -webkit-appearance:none;清除select默认样式</p>
 <p>5.width：100%;text-align:center;脱标后文本居中</p>
 <p>6.position:absolute;top:0;left:50%;margin-left:-元素宽度的一半px;定位后盒子居中</p>
+<p>option的:hover样式是浏览器系统默认且固定的，用户无法修改<p>
