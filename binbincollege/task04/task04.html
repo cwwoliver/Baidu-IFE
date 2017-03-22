@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>FE JavaScript Task 04</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        ul li{
+            float: left;
+            margin: 10px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <input id="input" type="text"/>
+    <button id="leftin">左侧入</button>
+    <button id="rightin">右侧入</button>
+    <button id="leftout">左侧出</button>
+    <button id="rightout">左侧出</button>
+
+    <ul id="result"></ul>
+
+    <script>
+        function $(obj){return document.getElementById(obj);}
+        var lis = [];
+        var arr = [10,3,7,12,11,30];
+
+        $("leftin").onclick = function () {
+            arr.unshift($("input").value);
+        }
+        $("rightin").onclick = function () {
+            arr.push($("input").value);
+        }
+        $("leftin").onclick = function () {
+            arr.pop($("input").value);
+        }
+        $("leftin").onclick = function () {
+            arr.shift($("input").value);
+        }
+
+        for (var i = 0; i < arr.length; i++) {
+            lis += "<li>" + arr[i] + "</li>";
+        }
+        $("result").innerHTML = lis;
+    </script>
+
+</body>
+</html>
