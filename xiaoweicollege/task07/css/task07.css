@@ -256,6 +256,9 @@ body{
 .hide{
     display: none;/*隐藏省份选项*/
 }
+.search form option{
+    background-color: #e3e2e4;
+}
 .search form input{
     width: 236px;
     height: 36px;
