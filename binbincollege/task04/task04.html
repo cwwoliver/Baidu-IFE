@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <title>FE JavaScript Task 04</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         ul{
             list-style: none;
         }
         ul li{
             float: left;
-            margin: 10px;
-            background-color: pink;
+            padding: 5px;
+            margin: 5px;
+            background-color: red;
+            color: #fff;
+            font: 12px "Microsoft Yahei";
         }
     </style>
 </head>
@@ -19,32 +26,80 @@
     <button id="leftin">左侧入</button>
     <button id="rightin">右侧入</button>
     <button id="leftout">左侧出</button>
-    <button id="rightout">左侧出</button>
+    <button id="rightout">右侧出</button>
 
     <ul id="result"></ul>
 
     <script>
         function $(obj){return document.getElementById(obj);}
-        var lis = [];
+        var lis = $("result");
         var arr = [10,3,7,12,11,30];
 
-        $("leftin").onclick = function () {
-            arr.unshift($("input").value);
+        function clearList() {
+            while (lis.hasChildNodes()) {
+                lis.removeChild(lis.firstChild);
+            }
         }
-        $("rightin").onclick = function () {
-            arr.push($("input").value);
+        //清除ul列表
+
+        function displayList() {
+            for (var i = 0; i < arr.length; i++) {
+                var num = arr[i];
+                var list_item = document.createElement("li");
+                var list_text = document.createTextNode(num);
+                list_item.appendChild(list_text);
+                lis.appendChild(list_item);
+                list_item.onclick = removeItem;
+            }
         }
-        $("leftin").onclick = function () {
-            arr.pop($("input").value);
-        }
-        $("leftin").onclick = function () {
-            arr.shift($("input").value);
+        //显示ul列表
+
+        function removeItem() {
+            var index = 0;
+            //找出当前点击子元素位置
+            for (var i = 0; i < lis.length; i++) {
+                if (lis[i] === this) {
+                    index = i;
+                }
+            }
+            //从列表中和数组中分别移除点击项
+            lis.removeChild(this);
+            arr.splice(index,1);
         }
 
-        for (var i = 0; i < arr.length; i++) {
-            lis += "<li>" + arr[i] + "</li>";
+        //按钮绑定时事件
+        function btnInit() {
+            $("leftin").onclick = function () {
+                //文本框不为空时执行
+                if ($("input").value !== "") {
+                    clearList();
+                    arr.unshift($("input").value);//从前部插入数组
+                    displayList();
+                }
+            }
+            $("rightin").onclick = function () {
+                //文本框不为空时执行
+                if ($("input").value !== "") {
+                    clearList();
+                    arr.push($("input").value);//从后部插入数组
+                    displayList();
+                }
+            }
+            $("leftout").onclick = function () {
+                clearList();
+                arr.shift($("input").value);//删除第一个元素
+                displayList();
+            }
+            $("rightout").onclick = function () {
+                clearList();
+                arr.pop($("input").value);//删除最后一个元素
+                displayList();
+            }
         }
-        $("result").innerHTML = lis;
+        displayList();
+        btnInit();
+
+
     </script>
 
 </body>
