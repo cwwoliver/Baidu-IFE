@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>FE JavaScript Task 05</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        ul li{
+            display: inline-block;
+            width: 15px;
+            margin: 1px;
+            background-color: red;
+            color: #fff;
+            font: 12px "Microsoft Yahei";
+        }
+    </style>
+</head>
+<body>
+    <input id="input" type="text"/>
+    <button id="leftin">左侧入</button>
+    <button id="rightin">右侧入</button>
+    <button id="leftout">左侧出</button>
+    <button id="rightout">右侧出</button>
+    <button id="asc">正序排列</button>
+    <button id="desc">倒序排列</button>
+
+    <ul id="result"></ul>
+
+    <script>
+        function $(obj){return document.getElementById(obj);}
+        var lis = $("result");
+        var arr = [10,3,7,12,11,30];
+
+        //清除ul列表
+        function clearList() {
+            while (lis.hasChildNodes()) {
+                lis.removeChild(lis.firstChild);
+            }
+        }
+
+        //显示ul列表
+        function displayList() {
+            for (var i = 0; i < arr.length; i++) {
+                var num = arr[i];
+                var list_item = document.createElement("li");
+                /*var list_text = document.createTextNode(num);
+                list_item.appendChild(list_text);*/
+                list_item.style.height = num*3+"px";
+                lis.appendChild(list_item);
+                list_item.onclick = removeItem;
+            }
+        }
+
+        //点击删除
+        function removeItem() {
+            var index = 0;
+            //找出当前点击子元素位置
+            for (var i = 0; i < lis.length; i++) {
+                if (lis[i] === this) {
+                    index = i;
+                }
+            }
+            //从列表中和数组中分别移除点击项
+            lis.removeChild(this);
+            arr.splice(index,1);
+        }
+
+        //输入检查
+        function checkCondition(input) {
+            if (parseInt(input)<10 || parseInt(input)>100) {
+                alert("请输入10到100之间的数字");
+                return false;
+            }
+            if (input =="") {
+                alert("当前输入值为空");
+                return false;
+            }
+            //判断输入是否为数字
+            if (isNaN(input)) {
+                alert("请输入数字");
+                return false;
+            }
+            if (arr.length > 60) {
+                alert("队列元素数量最多限制为60");
+                return false;
+            }
+            return true;
+        }
+
+
+        function asc() {
+            clearList();
+            arr.sort(function(a,b){return a[1]-b[1];});
+            displayList();
+        }
+
+
+
+
+
+        //按钮绑定时事件
+        function btnInit() {
+            $("leftin").onclick = function () {
+                var input = $("input").value;
+                //检查是否执行
+                if (checkCondition(input)) {
+                    clearList();
+                    arr.unshift(input);//从前部插入数组
+                    displayList();
+                }
+            }
+            $("rightin").onclick = function () {
+                var input = $("input").value;
+                //文本框不为空时执行
+                if (checkCondition(input)) {
+                    clearList();
+                    arr.push(input);//从后部插入数组
+                    displayList();
+                }
+            }
+            $("leftout").onclick = function () {
+                clearList();
+                arr.shift();//删除第一个元素
+                displayList();
+            }
+            $("rightout").onclick = function () {
+                clearList();
+                arr.pop();//删除最后一个元素
+                displayList();
+            }
+            $("asc").onclick = function () {
+                clearList();
+                arr.sort(function(a,b){return a-b;});//a-b正序排列
+                displayList();
+                console.log(arr)
+            }
+            $("desc").onclick = function () {
+                clearList();
+                arr.sort(function(a,b){return b-a;});//b-a倒序排列
+                displayList();
+            }
+
+        }
+
+
+
+
+        displayList();
+        btnInit();
+
+
+    </script>
+
+</body>
+</html>
