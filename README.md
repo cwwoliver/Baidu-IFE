@@ -10,6 +10,7 @@
 * [任务五：零基础HTML及CSS编码（二）](https://cwwoliver.github.io/Baidu-IFE/xiaoweicollege/task05/task05.html)
 * [任务六：通过HTML及CSS模拟报纸排版](https://cwwoliver.github.io/Baidu-IFE/xiaoweicollege/task06/task06.html)
 * [任务七：实现常见的技术产品官网的页面架构及样式布局](https://cwwoliver.github.io/Baidu-IFE/xiaoweicollege/task07/task07.html)
+* [任务八：响应式网格（栅格化）布局](https://cwwoliver.github.io/Baidu-IFE/xiaoweicollege/task08/task08.html)
 
 
 =======
