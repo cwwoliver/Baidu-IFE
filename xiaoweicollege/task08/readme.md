@@ -7,4 +7,4 @@
 <p>笔记：</p>
 <p>1.box-sizing: border-box;CSS3属性，让border和padding全在设置的宽度内部</p>
 <p>2.[class*="col-"]选择开头是col-的类</p>
-<p>3.@media screen and (min-width: 768px) { }  //大于768px的屏幕</p>
+<p>3.@media screen and (min-width: 768px) { }  //当屏幕大于或等于768px时，将采用small.css样式来渲染Web页面</p>
