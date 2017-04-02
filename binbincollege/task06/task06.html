@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>FE JavaScript Task 04</title>
+    <title>FE JavaScript Task 06</title>
     <style>
         *{
             margin: 0;
@@ -10,6 +10,7 @@
         }
         ul{
             list-style: none;
+            margin-top: 10px;
         }
         ul li{
             float: left;
@@ -19,14 +20,27 @@
             color: #fff;
             font: 12px "Microsoft Yahei";
         }
+        textarea{
+            display: block;
+            resize: none;
+            margin-bottom: 10px;
+        }
+        /*匹配高亮*/
+        .highlight {
+            background-color: green;
+        }
+
     </style>
 </head>
 <body>
-    <input id="input" type="text"/>
+    <!--<input id="input" type="text"/>-->
+    <textarea id="input" rows="3" cols="55" placeholder="请输入您想插入的值：数字，字母或汉字，可以通过用回车，逗号，顿号，空格等符号作为不同内容的间隔"></textarea>
     <button id="leftin">左侧入</button>
     <button id="rightin">右侧入</button>
     <button id="leftout">左侧出</button>
     <button id="rightout">右侧出</button>
+    <input id="search_input" type="text" placeholder="请输入查询内容"/>
+    <button id="search_btn">查询</button>
 
     <ul id="result"></ul>
 
@@ -54,6 +68,7 @@
         }
         //显示ul列表
 
+        //点击删除
         function removeItem() {
             var listItems = lis.children;
             var index = 0;
@@ -70,21 +85,55 @@
             console.log(arr);
         }
 
+
+        //内容查询
+        function searchMatch() {
+            var searchInput = $("search_input").value;
+            //遍历元素标签,判断标签内文本节点内容与输入内容是否匹配
+            var listItems = lis.children;
+            for (var i = 0; i < listItems.length; i++) {
+                var item = listItems[i];
+                var item_text = item.firstChild.nodeValue;//li下面的文本，其类型是是文本节点，其nodeValue是就是写入在其中的字符串，包含换行和缩进
+                //创建匹配正则表达式，不区分大小写
+                var pattern = new RegExp(searchInput,"gi");
+                if (pattern.test(item_text)) {
+                    console.log("匹配!");
+                    item.setAttribute("class","highlight");
+                }
+            }
+        }
+
         //按钮绑定时事件
         function btnInit() {
             $("leftin").onclick = function () {
-                //文本框不为空时执行
-                if ($("input").value !== "") {
+                var input = $("input").value;
+                if (input == "") {
+                    alert("请输入有效内容")
+                }
+                else{
                     clearList();
-                    arr.unshift($("input").value);//从前部插入数组
+                    var judge = new RegExp("[,，\\.\\\n、 　]","g");//正则表达式判断分割符号
+                    inputs = input.split(judge);
+                    for (var i = 0; i < inputs.length; i++) {
+                        console.log("输入"+i+": "+inputs[i]);
+                        arr.unshift(inputs[i]);//从前部插入数组
+                    }
                     displayList();
                 }
             }
             $("rightin").onclick = function () {
-                //文本框不为空时执行
-                if ($("input").value !== "") {
+                var input = $("input").value;
+                if (input == "") {
+                    alert("请输入有效内容")
+                }
+                else{
                     clearList();
-                    arr.push($("input").value);//从后部插入数组
+                    var judge = new RegExp("[,，\\.\\\n、 　]","g");//正则表达式判断分割符号
+                    inputs = input.split(judge);
+                    for (var i = 0; i < inputs.length; i++) {
+                        console.log("输入"+i+": "+inputs[i]);
+                        arr.push(inputs[i]);//从前部插入数组
+                    }
                     displayList();
                 }
             }
@@ -98,6 +147,8 @@
                 arr.pop();//删除最后一个元素
                 displayList();
             }
+
+            $("search_btn").onclick = searchMatch;
         }
         displayList();
         btnInit();

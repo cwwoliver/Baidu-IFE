@@ -59,17 +59,21 @@
 
         //点击删除
         function removeItem() {
+            var listItems = lis.children;
             var index = 0;
             //找出当前点击子元素位置
-            for (var i = 0; i < lis.length; i++) {
-                if (lis[i] === this) {
+            for (var i = 0; i < listItems.length; i++) {
+                if (listItems[i] === this) {
                     index = i;
                 }
             }
             //从列表中和数组中分别移除点击项
             lis.removeChild(this);
             arr.splice(index,1);
+            alert("移除元素内数值为" + this.innerText + ", 位置为" +(1+index));
+            console.log(arr);
         }
+
 
         //输入检查
         function checkCondition(input) {
