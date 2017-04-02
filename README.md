@@ -22,6 +22,7 @@
 * [任务三：零基础JavaScript编码（三）](https://cwwoliver.github.io/Baidu-IFE/binbincollege/task03/task03.html)
 * [任务四：基础JavaScript练习（一）](https://cwwoliver.github.io/Baidu-IFE/binbincollege/task04/task04.html)
 * [任务五：基础JavaScript练习（二）](https://cwwoliver.github.io/Baidu-IFE/binbincollege/task05/task05.html)
+* [任务六：基础JavaScript练习（三）](https://cwwoliver.github.io/Baidu-IFE/binbincollege/task06/task06.html)
 
 
 
