@@ -1,7 +1,9 @@
 * 任务十：Flexbox 布局练习](https://cwwoliver.github.io/Baidu-IFE/xiaoweicollege/task10/task10.html)
 
 需要实现的效果如[效果图（点击打开）](http://7xrp04.com1.z0.glb.clouddn.com/task_1_10_1.png)所示，调整浏览器宽度查看响应式效果，红色的文字是说明，不需要写在 HTML 中。
+
 ---
+
 <h3 id="-">在线学习参考资料</h3>
 <ul>
 <li><a href="https://segmentfault.com/a/1190000002910324">Flexbox详解</a>：了解 Flexbox 属性的含义</li>
